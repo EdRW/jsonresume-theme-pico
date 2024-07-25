@@ -1,0 +1,45 @@
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    {{#resume.basics}}
+      <title>{{name}}</title>
+    {{/resume.basics}}
+    <link
+      rel='stylesheet'
+      href='https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css'
+    />
+
+<style>
+	{{{css}}}
+	</style>
+  </head>
+  <body>
+    {{!
+/* -------------------------------------------------------------------------- */
+/*                                   Basics                                   */
+/* -------------------------------------------------------------------------- */
+}}
+    {{#resume.basics}}
+      <header>
+        <section class='container'>
+          <h1>{{name}}</h1>
+          <h2>{{label}}</h2>
+        </section>
+      </header>
+    {{/resume.basics}}
+
+
+    
+    <main class='container'>
+    {{> basics}}
+    </main>
+
+    {{! 
+/* -------------------------------------------------------------------------- */
+/*                                   Skills                                   */
+/* -------------------------------------------------------------------------- */
+}}
+
+  </body>
+
+</html>

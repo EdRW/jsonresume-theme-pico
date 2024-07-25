@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "module": "Node16",
+    "target": "ESNext",
+    "strict": true
+  },
+  "typeAcquisition": {
+    "enable": true
+  },
+  "files": ["index.js"],
+  "exclude": ["node_modules", "**/node_modules/*"]
+}
