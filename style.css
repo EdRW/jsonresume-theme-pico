@@ -79,3 +79,23 @@
     max-width: 100%;
   }
 }
+
+ul.keywords {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.keywords,
+.courses {
+  li {
+    display: inline-block;
+    margin: 2px 2px 2px 0;
+    padding: 4px 5px 5px;
+    font-size: 0.9rem;
+    line-height: 1;
+    color: var(--pico-mark-color);
+    background-color: var(--pico-mark-background-color);
+    border: 0 solid var(--pico-mark-background-color);
+    white-space: nowrap;
+  }
+}
