@@ -1,6 +1,7 @@
 {{#resume.basics}}
 <section>
-  <address class="grid">
+  <h2>About</h2>
+  <address>
     {{! contact info }}
 
     {{#if location}}
@@ -29,7 +30,7 @@
 
   {{! social links }}
   {{#if profiles.length}}
-  <div class="grid">
+  <div>
     {{#each profiles}}
     <div>
       <span class="fa fa-{{ network }}">{{ network }}: </span>
@@ -47,8 +48,5 @@
     {{/each}}
   </div>
   {{/if}}
-
-  <h3>Summary</h3>
-  <p>{{ summary }}</p>
 </section>
 {{/resume.basics}}
