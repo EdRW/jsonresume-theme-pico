@@ -1,3 +1,12 @@
 {
-  "singleQuote": true
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": "*.hbs",
+      "options": {
+        "parser": "angular",
+        "singleQuote": false
+      }
+    }
+  ]
 }
