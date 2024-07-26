@@ -24,9 +24,15 @@
     {{/resume.basics}}
 
     <main class="container">
-      {{> basics}}
-      {{> skills}}
-      {{> work}}
+      <div class="layout">
+        <aside>
+          {{> skills}}
+        </aside>
+        <div>
+          {{> basics}}
+          {{> work}}
+        </div>
+      </div>
     </main>
   </body>
 </html>

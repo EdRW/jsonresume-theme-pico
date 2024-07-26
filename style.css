@@ -80,13 +80,15 @@
   }
 }
 
-ul.keywords {
+/* ul.keywords {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-.keywords,
-.courses {
+} */
+ul.keywords,
+ul.courses {
+  list-style-type: none;
+  padding-left: 0;
   li {
     display: inline-block;
     margin: 2px 2px 2px 0;
@@ -96,6 +98,14 @@ ul.keywords {
     color: var(--pico-mark-color);
     background-color: var(--pico-mark-background-color);
     border: 0 solid var(--pico-mark-background-color);
-    white-space: nowrap;
+    border-radius: 4px;
+    /* white-space: nowrap; */
   }
+}
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 20px;
+  grid-auto-flow: row;
 }
