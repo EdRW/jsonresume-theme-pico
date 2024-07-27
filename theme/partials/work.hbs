@@ -31,55 +31,55 @@
     </header>
 
     {{#if items.length}}
-    <div>
+    <div class="timeline">
       {{#each items}}
-
-      {{#if summary}}
-      <label for="work-item-{{@index}}"></label>
-      {{/if}}
-
-      <header class="clear">
-        {{#if position}}
-        <h4 class="position">{{ position }}</h4>
-        {{/if}}
-        <div class="date">
-          {{#if startDate}}
-          <span class="startDate">{{MY startDate}}</span>
-          {{/if}}
-          {{#if endDate}}
-          <span class="endDate">- {{MY endDate}}</span>
-          {{else}}
-          <span class="endDate">- Current</span>
-          {{/if}}
-        </div>
-      </header>
-
-      {{#if keywords.length}}
-      <ul class="keywords">
-        {{#each keywords}}
-        <li>{{ this }}</li>
-        {{/each}}
-      </ul>
-      {{/if}}
-      <div class="item" id="work-item">
+      <div>
         {{#if summary}}
-        {{!--
-        <div class="summary">{{paragraphSplit summary}}</div>
-        --}}
-        <div class="summary">{{ summary }}</div>
+        <label for="work-item-{{@index}}"></label>
         {{/if}}
-        {{#if highlights.length}}
-        <ul class="highlights">
-          {{#each highlights}}
-          {{!--
-          <li>{{paragraphSplit this}}</li>
-          --}}
+
+        <header class="clear">
+          {{#if position}}
+          <h4 class="position">{{ position }}</h4>
+          {{/if}}
+          <div class="date">
+            {{#if startDate}}
+            <span class="startDate">{{MY startDate}}</span>
+            {{/if}}
+            {{#if endDate}}
+            <span class="endDate">- {{MY endDate}}</span>
+            {{else}}
+            <span class="endDate">- Current</span>
+            {{/if}}
+          </div>
+        </header>
+
+        {{#if keywords.length}}
+        <ul class="keywords">
+          {{#each keywords}}
           <li>{{ this }}</li>
           {{/each}}
         </ul>
         {{/if}}
+        <div class="item" id="work-item">
+          {{#if summary}}
+          {{!--
+          <div class="summary">{{paragraphSplit summary}}</div>
+          --}}
+          <div class="summary">{{ summary }}</div>
+          {{/if}}
+          {{#if highlights.length}}
+          <ul class="highlights">
+            {{#each highlights}}
+            {{!--
+            <li>{{paragraphSplit this}}</li>
+            --}}
+            <li>{{ this }}</li>
+            {{/each}}
+          </ul>
+          {{/if}}
+        </div>
       </div>
-
       {{/each}}
     </div>
     {{/if}}

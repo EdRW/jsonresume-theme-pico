@@ -110,3 +110,34 @@ ul.courses {
   gap: 0px 20px;
   grid-auto-flow: row;
 }
+.timeline > div {
+  position: relative;
+}
+
+.timeline > div:not(:last-child) {
+  padding-bottom: 1rem;
+}
+
+.timeline > div:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: -15px;
+  width: 2px;
+  height: 100%;
+  background: var(--pico-primary-background);
+  box-sizing: unset;
+}
+
+.timeline > div:not(:only-child)::after {
+  content: '';
+  position: absolute;
+  top: 0.6rem;
+  left: -20px;
+  width: 8px;
+  height: 8px;
+  background: var(--pico-primary-background);
+  border: 2px solid var(--pico-background-color);
+  border-radius: 50%;
+  box-sizing: unset;
+}
