@@ -92,13 +92,14 @@ ul.courses {
   li {
     display: inline-block;
     margin: 2px 2px 2px 0;
-    padding: 4px 5px 5px;
+    padding: 5px 5px 5px;
     font-size: 0.9rem;
     line-height: 1;
-    color: var(--pico-mark-color);
-    background-color: var(--pico-mark-background-color);
-    border: 0 solid var(--pico-mark-background-color);
-    border-radius: 4px;
+    color: var(--pico-primary-inverse);
+    background-color: var(--pico-primary-background);
+    border: var(--pico-border-width) var(--pico-primary-border);
+    border-radius: var(--pico-border-radius);
+    border-style: dashed;
     /* white-space: nowrap; */
   }
 }
