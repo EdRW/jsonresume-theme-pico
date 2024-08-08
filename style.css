@@ -141,3 +141,7 @@ ul.courses {
   border-radius: 50%;
   box-sizing: unset;
 }
+
+.profile-icon svg {
+  height: 1em;
+}
