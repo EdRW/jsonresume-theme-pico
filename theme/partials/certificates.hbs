@@ -1,22 +1,22 @@
 {{#if resume.certificates.length}}
 <section id="certificates">
-  <h2>Certificates</h2>
+  <h3>Certifications</h3>
   <div>
     {{#each resume.certificates}}
     <header class="dated-header">
       {{#if name}}
-      <h4>
+      <h5>
         {{#if url}}
         <a target="_blank" href="{{ url }}">{{ name }}</a>
         {{else}}
         {{ name }}
         {{/if}}
-      </h4>
+      </h5>
       {{/if}}
       {{#if date}}
-      <div>
+      <em>
         <span class="date">{{ date }}</span>
-      </div>
+      </em>
       {{/if}}
     </header>
 

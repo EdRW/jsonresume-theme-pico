@@ -1,13 +1,13 @@
 {{#if resume.education.length}}
 <div>
-  <h2>Education</h2>
+  <h3>Education</h3>
 
   {{#each resume.education}}
 
-  <section class="item {{#if breakBefore}}page-break{{/if}}">
+  <div class="item {{#if breakBefore}}page-break{{/if}}">
     <header class="dated-header">
       {{#if institution}}
-      <h4>
+      <h5>
         {{#if url}}
         <a target="_blank" href="{{ url }}">{{ institution }}</a>
         {{else}}
@@ -20,14 +20,14 @@
           <span class="work-location">{{ location }}</span>
         </small>
         {{/if}}
-      </h4>
+      </h5>
       {{/if}}
 
       {{#if location}}
       <span class="location">{{ location }}</span>
       {{/if}}
 
-      <div class="italic pull-right">
+      <em class="italic pull-right">
         {{#if startDate}}
         <span class="startDate">{{MY startDate}}</span>
         {{#if endDate}}
@@ -40,7 +40,7 @@
         {{else if date}}
         {{MY date}}
         {{/if}}
-      </div>
+      </em>
     </header>
 
     <p>{{#if studyType}}{{ studyType }} {{/if}}{{#if area}}{{ area }}{{/if}}</p>
@@ -58,7 +58,7 @@
       {{/each}}
     </ul>
     {{/if}}
-  </section>
+  </div>
   {{/each}}
 </div>
 {{/if}}

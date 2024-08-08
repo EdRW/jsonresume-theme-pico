@@ -65,10 +65,15 @@ ul.courses {
 
 .profile-icon svg {
   height: 1rem;
+  margin-right: var(--pico-spacing);
 }
 
 .highlights {
   font-size: 0.95rem;
+}
+
+h3 {
+  border-bottom: 1px solid var(--pico-color);
 }
 
 .dated-header {
@@ -84,6 +89,9 @@ ul.courses {
     margin-bottom: 0;
   }
   /* align-items: center; */
+}
+.dotted-hr {
+  border-top: 1px dashed var(--pico-muted-border-color);
 }
 
 @media print {
@@ -152,8 +160,44 @@ ul.courses {
   h4,
   h5,
   h6 {
-    --pico-font-weight: 600;
+    --pico-font-weight: 500;
     /* Original: 700 */
+  }
+
+  h1 {
+    --pico-font-size: 2rem;
+    --pico-line-height: 1.125;
+    --pico-typography-spacing-top: 3rem;
+  }
+
+  h2 {
+    --pico-font-size: 1.5rem;
+    --pico-line-height: 1.175;
+    --pico-typography-spacing-top: 2.25rem;
+  }
+
+  h3 {
+    --pico-font-size: 1.25rem;
+    --pico-line-height: 1.2;
+    --pico-typography-spacing-top: 1.874rem;
+  }
+
+  h4 {
+    --pico-font-size: 1.125rem;
+    --pico-line-height: 1.225;
+    --pico-typography-spacing-top: 1.6875rem;
+  }
+
+  h5 {
+    --pico-font-size: 1rem;
+    --pico-line-height: 1.25;
+    --pico-typography-spacing-top: 1.5rem;
+  }
+
+  h6 {
+    --pico-font-size: 1rem;
+    --pico-line-height: 1.25;
+    --pico-typography-spacing-top: 1.5rem;
   }
 
   article {
@@ -179,5 +223,13 @@ ul.courses {
       border-style: dashed;
       /* white-space: nowrap; */
     }
+  }
+
+  body > main {
+    padding-block: 0;
+  }
+
+  p {
+    margin-bottom: calc(var(--pico-typography-spacing-vertical) / 2);
   }
 }
