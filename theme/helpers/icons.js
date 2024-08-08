@@ -9,7 +9,7 @@ import handlebars from 'handlebars';
  * @param {string} name
  * @returns {string | handlebars.SafeString}
  */
-export function BrandIcon(name) {
+export function Icon(name) {
   const normalizedName = normalizeName(name);
   const icon = icons[normalizedName];
 
