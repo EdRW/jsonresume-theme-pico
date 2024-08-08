@@ -1,16 +1,15 @@
 {{#if resume.work.length}}
 <section class="section">
   <header>
-    <h2 class="section-title">
-      Experience <span class="item-count">({{ resume.work.length }})</span>
-    </h2>
+    <h3 class="section-title">Experience</h3>
   </header>
 
   <section id="work">
     {{#nestedWork resume.work}}
+    {{#each this}}
     <header>
       {{#if name}}
-      <h3>
+      <h4>
         {{#if url}}
         <a target="_blank" href="{{ url }}">{{ name }}</a>
         {{else}}
@@ -23,7 +22,7 @@
           <span class="work-location">{{ location }}</span>
         </small>
         {{/if}}
-      </h3>
+      </h4>
       {{/if}}
       {{#if description}}
       <p class="description">{{ description }}</p>
@@ -40,9 +39,9 @@
 
         <header class="dated-header">
           {{#if position}}
-          <h4 class="position">{{ position }}</h4>
+          <h5 class="position">{{ position }}</h5>
           {{/if}}
-          <div class="date">
+          <em class="date">
             {{#if startDate}}
             <span class="startDate">{{MY startDate}}</span>
             {{/if}}
@@ -51,7 +50,7 @@
             {{else}}
             <span class="endDate">- Current</span>
             {{/if}}
-          </div>
+          </em>
         </header>
 
         {{#if keywords.length}}
@@ -81,10 +80,15 @@
           {{/if}}
         </div>
       </div>
+
       {{/each}}
     </div>
     {{/if}}
 
+    {{#unless  @last}}
+    <hr class="dotted-hr" />
+    {{/unless}}
+    {{/each}}
     {{/nestedWork}}
   </section>
 </section>

@@ -26,9 +26,5 @@ export function nestedWork(workArray, options) {
     /** @type {NestedWorkArray} */ ([])
   );
 
-  return nestedWork
-    .map((work) => {
-      return options.fn(work);
-    })
-    .join('');
+  return options.fn(nestedWork);
 }
