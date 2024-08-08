@@ -94,6 +94,10 @@ h3 {
   border-top: 1px dashed var(--pico-muted-border-color);
 }
 
+.cert {
+  font-size: 0.75em;
+}
+
 @media print {
   :root {
     font-size: 13;
@@ -229,7 +233,8 @@ h3 {
     padding-block: 0;
   }
 
-  p {
-    margin-bottom: calc(var(--pico-typography-spacing-vertical) / 2);
+  .page-break {
+    /* margin-top: 30px; */
+    page-break-inside: avoid;
   }
 }

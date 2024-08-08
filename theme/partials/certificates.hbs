@@ -1,31 +1,34 @@
 {{#if resume.certificates.length}}
-<section id="certificates">
+<section id="certificates" class="page-break">
   <h3>Certifications</h3>
   <div>
     {{#each resume.certificates}}
     <header class="dated-header">
       {{#if name}}
-      <h5>
-        {{#if url}}
-        <a target="_blank" href="{{ url }}">{{ name }}</a>
-        {{else}}
-        {{ name }}
-        {{/if}}
-      </h5>
+      {{#if url}}
+      <a target="_blank" href="{{ url }}">{{ name }}</a>
+      {{else}}
+      {{ name }}
+      {{/if}}
       {{/if}}
       {{#if date}}
-      <em>
-        <span class="date">{{ date }}</span>
-      </em>
       {{/if}}
     </header>
 
     {{#if issuer}}
-    <p>
-      Issuer: <span class="issuer">{{ issuer }}</span>
+    <p class="cert">
+      <b>Issuer:</b> <span class="issuer">{{ issuer }}</span>
+      <br />
+      <b>Issued:</b>
+      <em>
+        <span class="date">{{ date }}</span>
+      </em>
     </p>
     {{/if}}
 
+    {{#unless  @last}}
+    <hr class="dotted-hr" />
+    {{/unless}}
     {{/each}}
   </div>
 </section>
