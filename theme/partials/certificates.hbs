@@ -3,7 +3,7 @@
   <h2>Certificates</h2>
   <div>
     {{#each resume.certificates}}
-    <div>
+    <header class="dated-header">
       {{#if name}}
       <h4>
         {{#if url}}
@@ -18,12 +18,14 @@
         <span class="date">{{ date }}</span>
       </div>
       {{/if}}
-      {{#if issuer}}
-      <div>
-        <span class="issuer">{{ issuer }}</span>
-      </div>
-      {{/if}}
-    </div>
+    </header>
+
+    {{#if issuer}}
+    <p>
+      Issuer: <span class="issuer">{{ issuer }}</span>
+    </p>
+    {{/if}}
+
     {{/each}}
   </div>
 </section>

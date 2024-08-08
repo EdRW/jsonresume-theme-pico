@@ -35,9 +35,9 @@ ul.courses {
   position: relative;
 }
 
-.timeline > div:not(:last-child) {
-  /* padding-bottom: 1rem; */
-}
+/* .timeline > div:not(:last-child) {
+  padding-bottom: 1rem;
+} */
 
 .timeline > div:not(:last-child)::before {
   content: '';
@@ -53,7 +53,7 @@ ul.courses {
 .timeline > div:not(:only-child)::after {
   content: '';
   position: absolute;
-  top: 0.6rem;
+  top: 0.3rem;
   left: -20px;
   width: 8px;
   height: 8px;
@@ -64,11 +64,26 @@ ul.courses {
 }
 
 .profile-icon svg {
-  height: 1em;
+  height: 1rem;
 }
 
 .highlights {
   font-size: 0.95rem;
+}
+
+.dated-header {
+  display: flex;
+  justify-content: space-between;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0;
+  }
+  /* align-items: center; */
 }
 
 @media print {
@@ -87,6 +102,10 @@ ul.courses {
     /* Original: 1.25rem */
     --pico-border-radius: 0.375rem;
     /* Original: 0.25rem */
+    --pico-typography-spacing-vertical: 0.5rem;
+    /* Original: 1rem */
+    --pico-spacing: 0.5rem;
+    /* Original: 1rem */
   }
 
   @media (min-width: 576px) {
