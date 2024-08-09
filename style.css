@@ -98,6 +98,12 @@ h3 {
   font-size: 0.75em;
 }
 
+.print-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
 @media print {
   :root {
     font-size: 13;
@@ -236,5 +242,9 @@ h3 {
   .page-break {
     /* margin-top: 30px; */
     page-break-inside: avoid;
+  }
+
+  .no-print {
+    display: none;
   }
 }
