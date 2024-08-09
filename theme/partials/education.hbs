@@ -43,7 +43,10 @@
       </em>
     </header>
 
-    <p>{{#if studyType}}{{ studyType }} {{/if}}{{#if area}}{{ area }}{{/if}}</p>
+    <p>
+      {{#if studyType}}{{ studyType }}{{#if area}}, {{/if}}{{/if}}{{#if area
+      }}{{ area }}{{/if}}
+    </p>
 
     {{#if gpa}}
     <h5>{{ gpa }}</h5>
