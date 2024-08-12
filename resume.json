@@ -1,179 +1,106 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "John Doe",
-    "label": "Developer, Co-Founder at Tech Innovators, Inc.",
+    "name": "Edmund Rosewright",
+    "label": "Developer, Co-Founder at QC Hero, Inc.",
     "image": "",
-    "email": "johndoe@example.com",
+    "email": "hi@edrw.dev",
     "phone": "",
-    "url": "https://johndoe.dev",
-    "summary": "A certified cloud engineer driven by curiosity and a passion for lifelong learning. I enjoy tackling challenging problems and exploring new technologies to create innovative solutions. My approach to product R&D emphasizes rapid iteration and cloud-native architectures, shaped by industry experience in cloud computing, machine learning, machine vision, and industrial automation.",
+    "url": "https://edrw.dev",
+    "summary": "A Google Cloud certified engineer driven by curiosity and a passion for lifelong learning. I enjoy tackling challenging problems and exploring new technologies, to create innovative solutions.",
     "location": {
-      "countryCode": "US",
-      "city": "San Francisco"
+      "countryCode": "JP",
+      "city": "Tokyo"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "johndoe",
-        "url": "https://www.linkedin.com/in/johndoe/"
-      },
-      {
-        "network": "GitLab",
-        "username": "JDoe",
-        "url": "https://www.gitlab.com/JDoe"
+        "username": "edmundrosewright",
+        "url": "https://www.linkedin.com/in/edmundrosewright/"
       },
       {
         "network": "Github",
-        "username": "JDoe",
-        "url": "https://www.github.com/JDoe"
-      },
-      {
-        "network": "Exercism",
-        "username": "JDoe",
-        "url": "https://exercism.org/profiles/JDoe"
+        "username": "EdRW",
+        "url": "https://www.github.com/EdRW"
       }
     ]
   },
   "work": [
     {
-      "name": "Tech Innovators, Inc.",
-      "company": "Tech Innovators, Inc.",
+      "name": "QC Hero, Inc.",
+      "company": "QC Hero, Inc.",
       "position": "Developer, Co-Founder",
       "startDate": "2020-02-28",
-      "url": "https://techinnovators.com",
-      "location": "Greater San Francisco Area, CA, USA",
-      "description": "Tech Innovators is a B2B SaaS platform that empowers industrial manufacturers to use machine learning in their visual inspection and quality control processes. The platform simplifies training ML models on massive datasets in the cloud at scale. These models are used by our customers as high-accuracy, custom defect detectors in production.",
+      "url": "https://qchero.com",
+      "location": "Chicago, IL, USA",
+      "description": "QC Hero is a B2B SaaS that empowers industrial manufacturers to use machine learning in their visual inspection and quality control processes. It simplifies training ML models on massive datasets in the cloud at scale. These models are used custom defect detectors in production.",
       "summary": "As technical co-founder, I am responsible for the design and implementation of the platform's cloud-native architecture, ML pipeline, and frontend applications.",
       "highlights": [
         "Designed and implemented a robust serverless cloud architecture that enables event-driven data processing and asynchronous long-running tasks.",
-        "Developed a fast, scalable ML pipeline that runs on AWS, uses GPU accelerators, and is orchestrated with Kubeflow Pipelines.",
-        "Cloud infrastructure built using many AWS services including Lambda, API Gateway, S3, CloudWatch, Cognito, and DynamoDB.",
-        "Used Python and Typescript on the backend, modern React for the frontend, and GitLab CI/CD for automated testing and deployment on AWS."
+        "Developed a fast, scalable ML pipeline that runs on Google Cloud Vertex AI, uses TPU accelerators, and is orchestrated with Kubeflow Pipelines.",
+        "Cloud infrastructure built using many GCP services including Cloud Run, Cloud Functions, Pub/Sub, Cloud Storage, Monitoring, Firebase Auth and Firestore database."
       ]
     },
     {
-      "name": "Tech Solutions, Inc.",
-      "company": "Tech Solutions, Inc.",
-      "description": "A quality control and automation company that began by specializing in electromechanical function testing for automotive seating. In 2017 it developed its flagship product VisionAI™, a machine vision and AI-driven inspection system for advanced industrial manufacturers.",
+      "name": "LM3 Technologies, Inc.",
+      "company": "LM3 Technologies, Inc.",
+      "description": "A software and hardware solutions company that began by specializing in electromechanical function testing for automotive seating. In 2017 it developed its flagship product PAQi™, a machine vision and AI-driven inspection system for advanced industrial manufacturers.",
       "position": "Senior Software Engineer",
       "startDate": "2019-03-31",
       "endDate": "2020-02-28",
-      "url": "https://www.techsolutions.com/",
-      "location": "San Francisco, CA, USA",
-      "summary": "As the lead developer on a 5-person multidisciplinary engineering team, developed the machine learning inference server at the core of the VisionAI system. This inference server allows VisionAI to perform classification and object detection locally, and use those predictions to make determinations about the quality of customer's products and locations of defects.",
+      "url": "https://www.lm3technologies.com/",
+      "location": "Chicago, IL, USA",
+      "summary": "As the lead developer on a 5-person multidisciplinary engineering team, developed the machine learning inference server at the core of the PAQi system. This inference server allows PAQi to perform classification and object detection locally or remotely, and use those predictions determine the quality of customer's products and locations of defects.",
       "highlights": [
-        "Used Python and Flask for REST API development, TensorFlow when serving trained ML models, and Docker when running as a standalone service."
+        "Used Flask for REST API development and Tensorflow when serving trained ML models"
       ]
     },
     {
-      "name": "Tech Solutions, Inc.",
-      "company": "Tech Solutions, Inc.",
-      "description": "A quality control and automation company that began by specializing in electromechanical function testing for automotive seating. In 2017 it developed its flagship product VisionAI™, a machine vision and AI-driven inspection system for advanced industrial manufacturers.",
+      "name": "LM3 Technologies, Inc.",
+      "company": "LM3 Technologies, Inc.",
+      "description": "A software and hardware solutions company that began by specializing in electromechanical function testing for automotive seating. In 2017 it developed its flagship product PAQi™, a machine vision and AI-driven inspection system for advanced industrial manufacturers.",
       "position": "Software Engineer",
       "startDate": "2017-06-30",
       "endDate": "2019-03-31",
-      "url": "https://www.techsolutions.com/",
-      "location": "San Francisco, CA, USA",
+      "url": "https://www.lm3technologies.com/",
+      "location": "Chicago, IL, USA",
       "summary": "As one of two software developers on a 5-person multidisciplinary engineering team, developed several new products that defined the company's transition away from electromechanical function testers to vision and AI-driven inspection systems, web apps, and services for product quality testing.",
       "highlights": [
-        "Developed ML training pipelines built on Bash scripts using the TensorFlow Object Detection API, and orchestrated via a Python CLI application.",
-        "Built a custom multi-accelerator Linux server for running ML training pipelines on-premises.",
-        "Achieved Kuka collaborative robot programming certification in order to develop a multi-point visual inspection system.",
-        "Developed the QA System, a web app with desktop and mobile clients, for a large automotive supplier for managing the tooling and fixtures used in their manufacturing process. Built with Java, Spring Boot, and Open Data Kit (ODK) for Mobile.",
-        "Developed a custom web dashboard for a large automotive supplier to monitor real-time industrial manufacturing and OEE (Overall Equipment Effectiveness) data. Built in ASP.NET Core with C# and Entity Framework.",
-        "Achieved ISO 9001:2015 and ISO 17025:2017 Internal Auditor certifications and contributed to the development of the company's quality management system.",
-        "Effectively captured and interpreted customer requirements, resulting in well-defined technical specifications and successful implementations and product launches."
+        "Developed ML training pipelines built on top of the Tensorflow Object Detection API framework, and manged via a Python CLI application.",
+        "Developed the mDAQ System, a web app with desktop and mobile clients, for a large automotive supplier to manage the tooling and fixtures used in their manufacturing process. Built with Java, Spring Boot, and Open Data Kit (ODK) for Mobile.",
+        "Developed a custom web dashboard for a large automotive supplier to monitor real time industrial manufacturing and OEE data. Built in ASP.NET Core with C# and Entity Framework."
       ]
-    },
-    {
-      "name": "Tech Solutions, Inc.",
-      "company": "Tech Solutions, Inc.",
-      "description": "A quality control and automation company that began by specializing in electromechanical function testing for automotive seating. In 2017 it developed its flagship product VisionAI™, a machine vision and AI-driven inspection system for advanced industrial manufacturers.",
-      "position": "Automated Test Engineer",
-      "startDate": "2015-02-28",
-      "endDate": "2017-06-30",
-      "url": "https://www.techsolutions.com/",
-      "location": "San Francisco, CA, USA",
-      "summary": "Developed software and hardware platforms for end-of-line quality control testing for a major electric vehicle manufacturer during the production of their first car, and again later during the production of their first crossover SUV.",
-      "highlights": [
-        "Joined a team of 3 outsourced developers as the in-house lead, to deliver 2 applications core to the test products suite: the Test Sequencer Runtime and the Test Sequence Editor.",
-        "Programmed in LabVIEW and used NI DAQ embedded hardware for controls, instrumentation, and test automation.",
-        "Provided technical consulting, support, and training services to ensure that customers could maintain and operate their test systems."
-      ]
-    },
-    {
-      "name": "Innovative Building Materials, Corporate Innovation Center, Advanced Materials Laboratory",
-      "company": "Innovative Building Materials, Corporate Innovation Center, Advanced Materials Laboratory",
-      "description": "With over $3 billion in revenue, Innovative Building Materials is the largest manufacturer of gypsum products and distributor of drywall in America.",
-      "position": "Senior Technologist",
-      "startDate": "2013-04-30",
-      "endDate": "2015-02-28",
-      "url": "https://www.ibm.com/",
-      "location": "Greater San Francisco Area, CA, USA",
-      "summary": "As senior technologist, supported the research activities of several product teams by providing technical guidance and developing organization-wide test standards and procedures.",
-      "highlights": [
-        "New product R&D culminating in launch of IBM DUROCK™ BRAND ECOCAP™ Self-Leveling Underlayment.",
-        "Achieved National Instruments LabVIEW Associate Developer certification to design real-time sensor-based data acquisition systems for automated experiment control and monitoring.",
-        "Conducted technical interviews and facilitated onboarding/training for new team members, ensuring their proficiency in laboratory equipment, procedures, and safety protocols."
-      ]
-    },
-    {
-      "name": "Innovative Building Materials, Corporate Innovation Center, Advanced Materials Laboratory",
-      "company": "Innovative Building Materials, Corporate Innovation Center, Advanced Materials Laboratory",
-      "description": "With over $3 billion in revenue, Innovative Building Materials is the largest manufacturer of gypsum products and distributor of drywall in America.",
-      "position": "Laboratory Technician",
-      "startDate": "2012-02-28",
-      "endDate": "2013-04-30",
-      "url": "https://www.ibm.com/",
-      "location": "Greater San Francisco Area, CA, USA",
-      "summary": "As a technician on the New Product Development team, developed and performed experiments to characterize the physical properties of cement-based materials.",
-      "highlights": [
-        "Installed and maintained precision test equipment and instrumentation.",
-        "Acquired, analyzed, and documented test data in reports, spreadsheets, and presentations to communicate technical details of new product research."
-      ]
-    },
-    {
-      "name": "Stanford University, Physics Department",
-      "company": "Stanford University, Physics Department",
-      "position": "Teaching Assistant",
-      "startDate": "2010-09-30",
-      "endDate": "2011-06-30",
-      "url": "https://www.stanford.edu/",
-      "location": "Stanford, CA, USA",
-      "summary": "Instructed freshman physics labs, ensuring a comprehensive understanding of key concepts through engaging demonstrations and experiments.",
-      "highlights": []
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "Tokyo Institute of Language and Culture",
+      "institution": "Kyoto Institute of Culture and Language",
       "area": "2-year intensive Japanese language program",
       "studyType": "Graduation Certificate",
       "startDate": "2019-10-31",
       "endDate": "2021-09-30",
       "score": "",
-      "url": "https://www.tilc.ac.jp/",
+      "url": "https://www.kicl.ac.jp/",
       "courses": []
     },
     {
-      "institution": "Stanford University",
-      "area": "Computer Software Engineering (Software Architecture)",
+      "institution": "DePaul University",
+      "area": "Software Engineering (Software Architecture)",
       "studyType": "Master of Science (MS) with Distinction",
       "startDate": "2015-12-31",
       "endDate": "2019-12-31",
-      "url": "https://www.stanford.edu/",
+      "url": "https://www.depaul.edu/",
       "score": "",
       "courses": []
     },
     {
-      "institution": "Stanford University",
+      "institution": "DePaul University",
       "area": "Physics, Minors in Mathematics and Japanese Studies",
       "studyType": "Bachelor of Science (BS)",
       "startDate": "2005-12-31",
       "endDate": "2011-12-31",
-      "url": "https://www.stanford.edu/",
+      "url": "https://www.depaul.edu/",
       "score": "",
       "courses": []
     }
@@ -181,8 +108,8 @@
   "awards": [],
   "certificates": [
     {
-      "name": "AWS Certified Machine Learning – Specialty",
-      "issuer": "Amazon Web Services",
+      "name": "Google Cloud Certified Professional Machine Learning Engineer",
+      "issuer": "Google Cloud Platform",
       "date": "2024-06-13",
       "url": "https://www.credly.com/badges/1b121c72-48ab-4b75-b99f-51d6209c40f0"
     },
@@ -191,30 +118,6 @@
       "issuer": "Japan Ministry of Education, Culture, Sports, Science and Technology",
       "date": "2021-01-31",
       "url": "https://www.jlpt.jp/e/"
-    },
-    {
-      "name": "ISO 9001:2015 Internal Auditor (Professional Certification)",
-      "issuer": "Bureau Veritas",
-      "date": "2017-09-30",
-      "url": "https://www.bvna.com/certification/quality-management-system-iso-9001"
-    },
-    {
-      "name": "ISO 17025:2017  Internal Auditor (Professional Certification)",
-      "issuer": "Bureau Veritas",
-      "date": "2017-09-30",
-      "url": "https://www.iso.org/standard/66912.html"
-    },
-    {
-      "name": "Collaborative Robot LBR iiwa Commissioning and Programming",
-      "issuer": "KUKA North America",
-      "date": "2017-09-22",
-      "url": "https://college.kuka.com/action?securedGetRequest=1ApuyZRdYoln8z3kR37rBLVEHisIou_rYxREV5o_FtI"
-    },
-    {
-      "name": "Certified LabVIEW Associate Developer",
-      "issuer": "National Instruments",
-      "date": "2015-01-21",
-      "url": "https://www.linkedin.com/in/johndoe/details/certifications/1721303649936/single-media-viewer?type=DOCUMENT&profileId=ACoAAAtSD7wB-VK9WEhLeIV9eexWmCOyGUgqIy8&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bko5lA7o%2FQ7qLXlwp2Y%2FJjQ%3D%3D"
     }
   ],
   "publications": [],
@@ -224,33 +127,21 @@
       "keywords": [
         "Typescript / Javascript",
         "Python (with type annotations)",
-        "C#",
-        "C++",
-        "Java",
-        "LabVIEW",
         "and more..."
       ]
     },
     {
       "name": "DevOps",
       "keywords": [
-        "Amazon Web Services",
-        "Container Orchestration",
-        "GitLab CI/CD",
-        "GitHub Actions",
-        "Shell Scripting (Bash, Fish)",
-        "Linux(Ubuntu, Pop!_OS)"
+        "Google Cloud Platform",
+        "Docker",
+        "CI/CD Pipelines",
+        "Linux (Ubuntu, Pop!_OS)"
       ]
     },
     {
       "name": "MLOps",
-      "keywords": [
-        "ML Pipeline Orchestration",
-        "Kubeflow Pipelines",
-        "AWS SageMaker",
-        "TensorFlow",
-        "Keras"
-      ]
+      "keywords": ["Kubeflow Pipelines", "Google Cloud Vertex AI", "TensorFlow"]
     }
   ],
   "languages": [
