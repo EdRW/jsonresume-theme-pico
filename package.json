@@ -1,19 +1,21 @@
 {
   "name": "jsonresume-theme-pico",
   "version": "0.0.1",
-  "description": "A minimal theme for JSON Resume using PicoCSS. Built with PDF printing in mind.",
+  "description": "A minimal theme for JSON Resume using PicoCSS. Built with PDF printing and mobile devices in mind.",
+  "author": "Edmund Rosewright",
+  "license": "MIT",
   "scripts": {
     "start": "nodemon --exec 'pnpm render'",
     "render": "resumed render resume.json --theme jsonresume-theme-pico",
-    "export": "node scripts/export-pdf.js",
     "test": "resumed validate resume.json"
   },
-  "nodemonConfig": {
-    "ext": "js,hbs,json,css",
-    "ignore": [
-      "resume.html",
-      "resume.pdf"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdRW/jsonresume-theme-pico.git"
+  },
+  "homepage": "https://github.com/EdRW/jsonresume-theme-pico",
+  "bugs": {
+    "url": "https://github.com/EdRW/jsonresume-theme-pico/issues"
   },
   "engines": {
     "node": ">=20.14.0"
@@ -23,27 +25,26 @@
   "keywords": [
     "basic",
     "json",
+    "json-resume",
     "jsonresume",
     "jsonresume-theme",
     "resume",
     "theme",
     "pico",
+    "picocss",
     "pico.css",
     "print",
-    "pdf"
+    "pdf",
+    "dark",
+    "mobile",
+    "responsive"
   ],
-  "license": "MIT",
-  "author": "Edmund Rosewright",
   "files": [
     "index.js",
     "resume.hbs",
     "style.css",
     "theme"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/edrw/jsonresume-theme-pico"
-  },
   "dependencies": {
     "handlebars": "^4.7.8",
     "moment": "^2.30.1",
@@ -54,5 +55,12 @@
     "nodemon": "^3.1.4",
     "puppeteer": "^22.13.1",
     "resumed": "^3.0.1"
+  },
+  "nodemonConfig": {
+    "ext": "js,hbs,json,css",
+    "ignore": [
+      "resume.html",
+      "resume.pdf"
+    ]
   }
 }
