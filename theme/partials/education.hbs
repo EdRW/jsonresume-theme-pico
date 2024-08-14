@@ -44,8 +44,11 @@
     </header>
 
     <p>
-      {{#if studyType}}{{ studyType }}{{#if area}}, {{/if}}{{/if}}{{#if area
-      }}{{ area }}{{/if}}
+      {{#if studyType}}
+      {{ studyType }}{{#if area}}, {{/if}}
+      {{/if}}
+
+      {{#if area }}{{ area }}{{/if}}
     </p>
 
     {{#if gpa}}
