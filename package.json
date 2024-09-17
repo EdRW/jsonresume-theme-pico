@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-pico",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A minimal theme for JSON Resume using PicoCSS. Built with PDF printing and mobile devices in mind.",
   "author": "Edmund Rosewright",
   "license": "MIT",
